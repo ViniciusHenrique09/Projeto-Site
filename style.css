@@ -108,17 +108,10 @@ article > img{
 
 .boxVideo > iframe {
     position: absolute;
-    top: 9.5%;
-    left: 3%;
-    width: 93%;
-    height: 88%;
-}
-
-.boxVideo > h2{
-    color: white;
-    padding: 10px;
-    font-size: 2em;
-    text-align: center;
+    top: 3.5%;
+    left: 6%;
+    width: 88%;
+    height: 93%;
 }
 
 footer > p {
