@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+    padding: 3px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 0px;
+    background-color: #0CABA8;
+}
+
+header{
+    background-image: linear-gradient(to top, #015958 ,#0CABA8 );
+    margin: 10px -5px 0px -6px;
+    padding: 1px;
+}
+
+header > h1{ /* Kaiju No.8*/
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: 'Graduate', Times, serif;
+    text-shadow: 4px 3px 13px rgba(0, 0, 0, 0.699);
+}
+
+nav{ /* Home Kafka Kaiju */
+    padding: 10px;
+    box-shadow: 0px -1px 7px 0px #01595838;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px;
+    transition-duration: 1s;
+}
+
+nav > a:hover{
+    background-color: #0CABA8;
+    border-radius: 5px;
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+article > h1{ /* Sobre Kaiju No.8 */
+    font-family: 'Chivo Mono', Times, serif;
+    color: #008F8C;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 4px 3px 13px rgba(0, 0, 0, 0.253);
+}
+
+article > p{
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+article > h2{
+    font-family: 'Chivo Mono', Times, serif;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,#0fc2bf52, white );
+    margin-bottom: 10px;
+}
+
+article > h3{
+    font-family: 'Chivo Mono', Times, serif;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,#0fc2bf52, white );
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article > img{
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+
+.boxVideo{
+    position: relative;
+    background-color: #008F8C;
+    padding-bottom: 53.25%;
+    padding-top: 0px;
+    margin: 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.boxVideo > iframe {
+    position: absolute;
+    top: 9.5%;
+    left: 3%;
+    width: 93%;
+    height: 88%;
+}
+
+.boxVideo > h2{
+    color: white;
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+footer > p {
+    text-align: center;
+    background-color: #015958;
+    color: white;
+    font-size: 0,8em;
+    font-weight: normal;
+    margin: 6px -9px -9px -12px;
+    padding: 5px;
+}
+
+footer > p >strong{
+    font-weight: bold;
+    color: white;
+}
