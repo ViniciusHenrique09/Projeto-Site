@@ -31,7 +31,7 @@ header > h1{ /* Kaiju No.8*/
     text-shadow: 4px 3px 13px rgba(0, 0, 0, 0.699);
 }
 
-nav{ /* Home Kafka Kaiju */
+nav{ /* Home Kafka Kaiju video */
     padding: 10px;
     box-shadow: 0px -1px 7px 0px #01595838;
 }
@@ -91,9 +91,18 @@ article > h3{
     margin-bottom: 10px;
 }
 
-article > img{
-    display: block;
-    width: 300px;
+article > img.img01{
+    display: flex;
+    width: 100%;
+    border-radius: 0px 0px 9px 9px;
+    margin: auto;
+}
+
+
+article > img.img02{
+    display: flex;
+    width: 100%;
+    border-radius: 0px 0px 9px 9px;
     margin: auto;
 }
 
@@ -124,7 +133,12 @@ footer > p {
     padding: 5px;
 }
 
-footer > p >strong{
-    font-weight: bold;
+footer > p> a{
     color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer > p> a:hover{
+    text-decoration: underline;
 }
