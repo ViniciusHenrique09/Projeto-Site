@@ -4,141 +4,175 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    font-family: var(--fonte-padrao);
+:root{
+    --font01: Arial, Helvetica, sans-serif;
+    --font02: 'Graduate'; /*Titulo*/
+    --font03: 'Chivo mono';/*Sub-Titulos*/
+
+    --cor01: #0D2340;
+    --cor02: #375C8C;
+    --cor03: #23A5D9;
+    --cor04: #23C7D9;
+    --cor05: #4BF2E2;
+}
+
+*{
+    padding: 0px;
     margin: 0px;
-    padding: 3px;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
-    margin: 0px;
-    background-color: #0CABA8;
-}
-
-header{
-    background-image: linear-gradient(to top, #015958 ,#0CABA8 );
-    margin: 10px -5px 0px -6px;
-    padding: 1px;
-}
-
-header > h1{ /* Kaiju No.8*/
-    text-align: center;
-    color: white;
-    font-size: 3em;
-    font-family: 'Graduate', Times, serif;
-    text-shadow: 4px 3px 13px rgba(0, 0, 0, 0.699);
-}
-
-nav{ /* Home Kafka Kaiju video */
-    padding: 10px;
-    box-shadow: 0px -1px 7px 0px #01595838;
-}
-
-nav > a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding: 10px;
-    transition-duration: 1s;
-}
-
-nav > a:hover{
-    background-color: #0CABA8;
-    border-radius: 5px;
+    font-family:var(--font01);
 }
 
 main{
-    background-color: white;
+    background-color: #375C8C;
+    color: white;
     min-width: 300px;
     max-width: 900px;
     margin: auto;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
-article > h1{ /* Sobre Kaiju No.8 */
-    font-family: 'Chivo Mono', Times, serif;
-    color: #008F8C;
+body{
+    text-align: justify;
+    background-color:var(--cor01)
+}
+
+header{
+    padding-bottom: 20px;
+}
+
+header > h1{ /* kaiju No 8 */
     text-align: center;
-    font-size: 2em;
-    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: var(--font02);
+    background-image: linear-gradient(to top, #375C8C/* cor02*/, #23A5D9/*cor03*/ );
+    color: white;
+    font-size: 9vw;
+    text-shadow: 4px 3px 13px rgba(0, 0, 0, 0.699);
+}
+
+header > nav{
+    background-color: var(--cor02);
+    box-shadow:  0px 0px 1px 0px black;
+    padding: 12px;
+}
+
+nav > a{
+    color: white;
+    padding: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+    transition-duration: 1.3s;
+}
+
+nav > a:hover {
+    background-color: #0D2340;
+    border-radius: 5px;
+}
+
+article > h1{ /* sobre kaiju No 8 */
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:var(--cor03);
+    font-family: var(--font03);
     text-shadow: 4px 3px 13px rgba(0, 0, 0, 0.253);
+    font-weight: bolder;
+    font-size: 4vw;
 }
 
 article > p{
     text-indent: 30px;
-    text-align: justify;
-    line-height: 1.5em;
-    margin-bottom: 10px;
+    line-height: 2em;
+    padding: 15px;
 }
 
-article > h2{
-    font-family: 'Chivo Mono', Times, serif;
-    border-radius: 5px;
-    background-image: linear-gradient(to right,#0fc2bf52, white );
-    margin-bottom: 10px;
+article > h2{ /*sobre o que se trata kaiju No 8 , Kafka, Mina e Kaiju*/
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to right, #375C8C,#23C7D9);
+    color: white;
+    font-family: var(--font03);
+    text-shadow: 4px 3px 13px rgba(0, 0, 0, 0.253);
+    font-weight: bolder;
+    font-size: 4vw;
+    border-radius: 0px 6px 0px;
 }
 
-article > h3{
-    font-family: 'Chivo Mono', Times, serif;
-    border-radius: 5px;
-    background-image: linear-gradient(to right,#0fc2bf52, white );
-    margin-top: 10px;
-    margin-bottom: 10px;
+article > h3{ /*como o kafka se tornou o kaiju e apresentação*/
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #375C8C,#23C7D9);
+    color: white;
+    font-family: var(--font03);
+    text-shadow: 4px 3px 13px rgba(0, 0, 0, 0.253);
+    font-weight: bolder;
+    font-size: 3.5vw;
+    border-radius: 0px 6px 0px;
 }
 
-article > img.img01{
-    display: flex;
-    width: 100%;
-    border-radius: 0px 0px 9px 9px;
-    margin: auto;
+article > section#img01{
+    background-image: url(imagens/Kafka.png);
+    background-position: center center;
 }
 
+article > section#img02{
+    background-image: url(imagens/kaijuteste.jpg);
+    background-position: top center;
+}
 
-article > img.img02{
-    display: flex;
-    width: 100%;
-    border-radius: 0px 0px 9px 9px;
-    margin: auto;
+article > section#img03{
+    background-image: url(imagens/Mina-Ashiro.png);
+    background-position: center center;
+}
+
+article > section.imagem{
+    padding-top: 50vh;
+    padding-bottom: 20vh;
+    background-color: var(--cor01);
+    box-shadow: inset 6px 6px 13px 3px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+article > section{
+    padding-bottom: 20px;
 }
 
 .boxVideo{
     position: relative;
-    background-color: #008F8C;
-    padding-bottom: 53.25%;
+    padding-bottom: 53%;
     padding-top: 0px;
     margin: 0px;
-    border-radius: 0px 0px 5px 5px;
 }
 
-.boxVideo > iframe {
+.boxVideo > iframe{
     position: absolute;
-    top: 3.5%;
     left: 6%;
+    top: 3.5%;
     width: 88%;
     height: 93%;
 }
 
-footer > p {
-    text-align: center;
-    background-color: #015958;
+footer{
     color: white;
-    font-size: 0,8em;
-    font-weight: normal;
-    margin: 6px -9px -9px -12px;
-    padding: 5px;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-footer > p> a{
-    color: white;
+a{
     text-decoration: none;
+    color: white;
     font-weight: bolder;
 }
 
-footer > p> a:hover{
+a:hover{
     text-decoration: underline;
 }
+
+
